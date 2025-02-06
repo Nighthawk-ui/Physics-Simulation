@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Circular Motion</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" rel= "stylesheet">
+    </head>
+
+
+    <body>
+        <h1>Circular Motion</h1>
+        <div class = "flexbox">
+            <div id = "myControlWindow" >
+                <span>
+                    <button class = "myButton" id = "PerfectOrbitButton">Perfect Orbit</button>
+                    <button class = "myButton" id="PlaygroundButton">Playground</button>
+                </span>
+                <div id = "box" class = "container active">
+                    <h2>Control</h2>
+                    <span>Adjust radius</span>
+                    <input type="range" id="mySlider" min="0" max="150" value="50">
+                    <span id="sliderValue">50</span>
+                    <button class = "normalise" id = "normalise">Normalise</button>
+
+                </div>
+                <div id = "box2" class = "container">
+                    <h2>Generate a Satellite</h2>
+                    <span>Adjust Velocity X</span>
+                        <input type="range" id="xSlider" min="0" max="150" value="50">
+                    <span id="xValue">50</span>
+                    <button class = "addObject" id = "addObject">Add Object</button>
+
+                </div>
+            </div>
+            <canvas id="MyCanvas"></canvas>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+</html>
